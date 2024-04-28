@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import hashlib
 import time
 
-URL = 'exe.com'  # Замените URL на адрес нужной веб-страницы
+URL = 'https://90186dac-ba2a-4777-adfa-c2b0c007e95d-00-2fjyuxkthu7te.picard.replit.dev/'  # Замените URL на адрес нужной веб-страницы
 current_hash = None
 
 def fetch_content(url):
