@@ -35,6 +35,5 @@ while True:
            print("Обнаружены изменения!")
            current_hash = new_hash
            # Здесь можно добавить отправку уведомлений или другие действия
-        time.sleep(5)
 
 bot.polling()
