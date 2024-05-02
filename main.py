@@ -2,6 +2,18 @@ import requests
 from bs4 import BeautifulSoup
 import hashlib
 import time
+import telebot
+
+# Вставте сюди ваш токен бота
+BOT_TOKEN = 'YOUR_BOT_TOKEN'
+
+bot = telebot.TeleBot(BOT_TOKEN)
+
+@bot.message_handler(commands=['start'])
+def start_message(message):
+  bot.send_message(message.chat.id, 'Привіт!')
+
+# Запуск бота
 
 URL = 'https://90186dac-ba2a-4777-adfa-c2b0c007e95d-00-2fjyuxkthu7te.picard.replit.dev/'  # Замените URL на адрес нужной веб-страницы
 current_hash = None
@@ -23,3 +35,5 @@ while True:
            print("Обнаружены изменения!")
            current_hash = new_hash
            # Здесь можно добавить отправку уведомлений или другие действия
+
+bot.polling()
