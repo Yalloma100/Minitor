@@ -5,7 +5,7 @@ import time
 import telebot
 
 # Вставте сюди ваш токен бота
-BOT_TOKEN = 'YOUR_BOT_TOKEN'
+BOT_TOKEN = '6937303308:AAEMrGtZRjgGpixbhSlxZZ_d21FRS27a8wc'
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
