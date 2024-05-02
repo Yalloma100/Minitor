@@ -15,7 +15,7 @@ def start_message(message):
 
 # Запуск бота
 
-URL = 'https://90186dac-ba2a-4777-adfa-c2b0c007e95d-00-2fjyuxkthu7te.picard.replit.dev/'  # Замените URL на адрес нужной веб-страницы
+URL = 'https://nh-c1fe.onrender.com'  # Замените URL на адрес нужной веб-страницы
 current_hash = None
 
 def fetch_content(url):
@@ -35,5 +35,6 @@ while True:
            print("Обнаружены изменения!")
            current_hash = new_hash
            # Здесь можно добавить отправку уведомлений или другие действия
+        time.sleep(5)
 
 bot.polling()
