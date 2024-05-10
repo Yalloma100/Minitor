@@ -2,17 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import hashlib
 import time
-import telebot
 
-# Вставте сюди ваш токен бота
-BOT_TOKEN = '6937303308:AAEMrGtZRjgGpixbhSlxZZ_d21FRS27a8wc'
-
-bot = telebot.TeleBot(BOT_TOKEN)
-
-@bot.message_handler(commands=['start'])
-def start_message(message):
-  bot.send_message(message.chat.id, 'Привіт!')
-  while True:
+while True:
        print("Проверка на изменения...")
        content = fetch_content(URL)
        new_hash = hashlib.sha256(content.encode('utf-8')).hexdigest()
@@ -34,5 +25,3 @@ def fetch_content(url):
        response = requests.get(url)
        soup = BeautifulSoup(response.content, 'html.parser')
        return soup.get_text()  # Получаем текст страницы для сравнения
-
-bot.polling()
