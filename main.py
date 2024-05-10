@@ -18,7 +18,7 @@ while True:
 
 # Запуск бота
 
-URL = 'https://nh-c1fe.onrender.com'  # Замените URL на адрес нужной веб-страницы
+URL = 'https://pnv8vn88wsnaaxr6q8rkjn.streamlit.app/'  # Замените URL на адрес нужной веб-страницы
 current_hash = None
 
 def fetch_content(url):
