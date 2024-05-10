@@ -1,4 +1,4 @@
- import requests
+   import requests
    from bs4 import BeautifulSoup
    import hashlib
    import time
@@ -24,4 +24,4 @@
            current_hash = new_hash
            # Здесь можно добавить отправку уведомлений или другие действия
 
-       time.sleep(10)  # Проверка каждые 10 секунд
+       time.sleep(600)  # Проверка каждые 10 минут
